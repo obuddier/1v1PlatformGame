@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
     public GameObject[] p1Sticks;
     public GameObject[] p2Sticks;
 
+    public AudioSource hurtSound;
+
 
      void Update()
     {
@@ -49,6 +51,8 @@ public class GameManager : MonoBehaviour
                 p1Sticks[i].SetActive(false);
             }
         }
+
+        hurtSound.Play();
     }
 
     public void HurtP2()
@@ -65,5 +69,6 @@ public class GameManager : MonoBehaviour
                 p2Sticks[i].SetActive(false);
             }
         }
+        hurtSound.Play();
     }
 }

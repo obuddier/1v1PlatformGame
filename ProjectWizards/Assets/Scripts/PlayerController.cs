@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
 
     public GameObject snowBall;
     public Transform throwPoint;
+    public AudioSource throwSound;
     
 
 
@@ -56,6 +57,7 @@ public class PlayerController : MonoBehaviour
           GameObject ballClone= (GameObject)Instantiate(snowBall, throwPoint.position, throwPoint.rotation);
             ballClone.transform.localScale=transform.localScale; //script player'a iliþtirildiði için onu baz alýyor.
             anim.SetTrigger("Throw");
+            throwSound.Play();
         }
 
         if(rb.velocity.x<0)
