@@ -17,6 +17,9 @@ public class PlayerController : MonoBehaviour
     public bool isGrounded;
 
     private Animator anim;
+
+    public GameObject snowBall;
+    public Transform throwPoint;
     
 
 
@@ -46,6 +49,13 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKeyDown(jump)&& isGrounded)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        }
+
+        if(Input.GetKeyDown(throwBall))
+            {
+          GameObject ballClone= (GameObject)Instantiate(snowBall, throwPoint.position, throwPoint.rotation);
+            ballClone.transform.localScale=transform.localScale; //script player'a iliþtirildiði için onu baz alýyor.
+            anim.SetTrigger("Throw");
         }
 
         if(rb.velocity.x<0)
