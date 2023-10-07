@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class GameManager : MonoBehaviour
 {
@@ -16,6 +18,7 @@ public class GameManager : MonoBehaviour
     public GameObject[] p2Sticks;
 
     public AudioSource hurtSound;
+    public string mainMenu;
 
 
      void Update()
@@ -32,6 +35,21 @@ public class GameManager : MonoBehaviour
             p2.SetActive(false);
             p1Wins.SetActive(true);
 
+        }
+
+        /*if(p1Wins.activeSelf||p2Wins.activeSelf)
+        {
+
+        }*/
+
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name); // halihazýrda açýk olan sahnenin adýný getiriyor
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(mainMenu);
         }
 
 
