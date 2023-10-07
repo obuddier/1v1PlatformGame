@@ -23,6 +23,16 @@ public class SnowBallCreator : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        if(other.tag=="Player1")
+        {
+            FindAnyObjectByType<GameManager>().HurtP1();
+        }
+        if (other.tag == "Player2")
+        {
+            FindAnyObjectByType<GameManager>().HurtP2();
+        }
+
+
         Instantiate(snowBallEffect,transform.position,transform.rotation); // creates an object in the world
         Destroy(gameObject);
 
