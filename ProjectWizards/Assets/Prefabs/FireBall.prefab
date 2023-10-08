@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 8346282898373832290}
   - component: {fileID: 3313100891944505168}
   - component: {fileID: 5043702843547303328}
-  - component: {fileID: 592895196342400530}
+  - component: {fileID: -376645213340541774}
   m_Layer: 0
-  m_Name: SnowBall
+  m_Name: FireBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,8 +76,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b964aaddba6d89948a269eceebdd6a39, type: 3}
-  m_Color: {r: 0.38823533, g: 0.8117648, b: 0.9058824, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 7fc3b4f363d97b347b7d97e2ee9fd2d1, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -149,7 +149,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &592895196342400530
+--- !u!114 &-376645213340541774
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -158,8 +158,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 3463363999759712538}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee620633373c61842bbc17c8deb80662, type: 3}
+  m_Script: {fileID: 11500000, guid: 9484b7e212e8c8446afc71855119094f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballSpeed: 15
-  snowBallEffect: {fileID: 7411683649862421217, guid: a3998585f1fc89f4a9be01973e176329, type: 3}
+  fireSpeed: 15
+  fireBallEffect: {fileID: 7411683649862421217, guid: 0e4f15958f7f58c419daa200906432bc, type: 3}
