@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: bhn
-  productName: Kartopu
+  productName: WaterVFire
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -281,7 +281,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 09ace021b0afd6646aa6e60263da9424, type: 3}
+      m_Icon: {fileID: 2800000, guid: 27fd2359bfc549a47ac98d63d2e284b3, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
